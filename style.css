@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #141e30,
+            #243b55
+        );
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+
+.container {
+    max-width: 800px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+h1 {
+    text-align: center;
+
+    color: #e50914;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+label {
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+
+input,
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+
+input:focus,
+select:focus {
+    outline: none;
+
+    border-color: #e50914;
+}
+
+
+.error {
+    display: block;
+
+    color: #e50914;
+
+    font-size: 13px;
+
+    margin-top: 4px;
+}
+
+
+.price-box {
+    background-color: #f5f5f5;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    border-left: 5px solid #e50914;
+}
+
+
+.price-box p {
+    margin: 8px 0;
+}
+
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #e50914;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #b20710;
+}
+
+
+#successMessage {
+    text-align: center;
+
+    color: green;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+}
+
+
+h2 {
+    margin-top: 35px;
+
+    margin-bottom: 15px;
+
+    color: #333;
+}
+
+
+.booking-card {
+    background-color: #f8f8f8;
+
+    border-left: 5px solid #e50914;
+
+    padding: 18px;
+
+    margin-bottom: 15px;
+
+    border-radius: 8px;
+}
+
+
+.booking-card h3 {
+    color: #e50914;
+
+    margin-bottom: 10px;
+}
+
+
+.booking-card p {
+    margin: 6px 0;
+}
+
+
+.cancel-btn {
+    width: auto;
+
+    padding: 8px 15px;
+
+    margin-top: 10px;
+
+    background-color: #555;
+
+    font-size: 14px;
+}
+
+
+.cancel-btn:hover {
+    background-color: #222;
+}
+
+
+.no-booking {
+    text-align: center;
+
+    color: #777;
+
+    padding: 15px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Movie Ticket Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎬 Online Movie Ticket Booking</h1>
+        <p class="subtitle">Book Your Movie Tickets Easily</p>
+
+
+        <!-- Booking Form -->
+        <form id="bookingForm">
+
+            <!-- Customer Name -->
+            <label for="name">Customer Name</label>
+            <input type="text" id="name"
+                   placeholder="Enter your name">
+
+            <span class="error" id="nameError"></span>
+
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="text" id="email"
+                   placeholder="Enter your email">
+
+            <span class="error" id="emailError"></span>
+
+
+            <!-- Mobile -->
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile"
+                   placeholder="Enter 10-digit mobile number">
+
+            <span class="error" id="mobileError"></span>
+
+
+            <!-- Movie -->
+            <label for="movie">Select Movie</label>
+
+            <select id="movie">
+
+                <option value="">Select Movie</option>
+
+                <option value="Avengers">
+                    Avengers
+                </option>
+
+                <option value="Inception">
+                    Inception
+                </option>
+
+                <option value="Interstellar">
+                    Interstellar
+                </option>
+
+                <option value="Jawan">
+                    Jawan
+                </option>
+
+                <option value="3 Idiots">
+                    3 Idiots
+                </option>
+
+            </select>
+
+            <span class="error" id="movieError"></span>
+
+
+            <!-- Date -->
+            <label for="date">Select Date</label>
+
+            <input type="date" id="date">
+
+            <span class="error" id="dateError"></span>
+
+
+            <!-- Show Time -->
+            <label for="time">Select Show Time</label>
+
+            <select id="time">
+
+                <option value="">Select Show Time</option>
+
+                <option value="10:00 AM">
+                    10:00 AM
+                </option>
+
+                <option value="1:00 PM">
+                    1:00 PM
+                </option>
+
+                <option value="4:00 PM">
+                    4:00 PM
+                </option>
+
+                <option value="7:00 PM">
+                    7:00 PM
+                </option>
+
+                <option value="10:00 PM">
+                    10:00 PM
+                </option>
+
+            </select>
+
+            <span class="error" id="timeError"></span>
+
+
+            <!-- Number of Tickets -->
+            <label for="tickets">Number of Tickets</label>
+
+            <input type="number" id="tickets"
+                   min="1" max="10"
+                   placeholder="Enter number of tickets">
+
+            <span class="error" id="ticketsError"></span>
+
+
+            <!-- Ticket Price -->
+            <div class="price-box">
+
+                <p>
+                    Ticket Price:
+                    <strong>₹200</strong> per ticket
+                </p>
+
+                <p>
+                    Total Amount:
+                    <strong id="totalAmount">₹0</strong>
+                </p>
+
+            </div>
+
+
+            <!-- Book Button -->
+            <button type="submit">
+                🎟️ Book Ticket
+            </button>
+
+        </form>
+
+
+        <!-- Success Message -->
+        <div id="successMessage"></div>
+
+
+        <!-- Booking List -->
+        <h2>📋 Booking Details</h2>
+
+        <div id="bookingList"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
